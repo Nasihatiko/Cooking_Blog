@@ -4,8 +4,17 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Generic</h1>
+										<h1>Welcome to Cooking Blog, </h1>
+										<h1>Sukhrab and Nasyikat!</h1>
 									</header>
+										{% if messages %}
+									<ul class="messages">
+										{% for message in messages %}
+										<div class="alert alert-success" role="alert">{{ message }}</div>
+										{% endfor %}
+									</ul>
+									{% endif %}
+
 
 									<span class="image main"><img src="{% static 'images/images.jpeg' %}" style="width:auto; height:auto;" alt="" /></span>
 
